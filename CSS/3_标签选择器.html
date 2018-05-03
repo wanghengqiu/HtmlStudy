@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS选择器</title>
+    <!--
+    css选择器一共有:
+    标签选择器
+    类选择器
+    ID选择器
+    全局选择器
+    群组选择器
+    后代选择器
+    -->
+
+    <!--标签选择器-->
+    <style type="text/css">
+        /*这样会让所有的p标签都变成同样的样式*/
+        p{font-size: 40px;color: red}
+        /*类选择器：为HTML标签添加class属性，通过类选择器来为具有此属性的元素设置CSS样式*/
+        .special{color: blue;font-size: 50px}
+        /*可对不同类型元素的同一个名称的类选择器设置不同的样式规则*/
+        /*只有设置了class为special的p标签，才能引用该样式*/
+        p.special{color: brown}
+        .one{
+            text-decoration: underline;
+        }
+    </style>
+
+    <style type="text/css">
+        /*ID选择器*/
+        #two{
+            color: green;
+        }
+        #three{
+            font-size: 20px;
+            color: blueviolet;
+        }
+    </style>
+
+    <!--群组选择器：集体统一的来选择样式-->
+    <style type="text/css">
+        /*如果这里的选择器太多的话，可以用全局选择器*/
+        p,h1,h2,h3{font-family: "Arial Hebrew Scholar"}
+        p.special,#three{font-size: 120px}
+    </style>
+
+    <!--全局选择器-->
+    <style type="text/css">
+        *{
+            color: darkgreen;
+        }
+    </style>
+
+    <!--后代选择器-->
+    <style type="text/css">
+        /*将p标签下面的em标签设置颜色*/
+        p em{
+            color: aqua;
+        }
+        h1.special em{
+            color: darkgoldenrod;
+        }
+    </style>
+
+</head>
+<body>
+    <p>标签选择器</p>
+    <!--类选择器-->
+    <p class="special">标签选择器2</p>
+    <p>标签选择器3</p>
+    <!--同一个元素可以设置多个类，之间用空格隔开-->
+    <h1 class="special one">标签<em>选择器</em>h1</h1>
+
+    <!--在同一个html文件中，每一个id是唯一的，这里的two赋给了h1，就不能再赋值给别的标签，
+    并且同一个标签智能有一个id-->
+    <h1 id="two">这是一个<em>无序列表</em></h1>
+    <ul type="disc" id="three">
+        <li>第一项内容</li>
+        <li>第二项内容</li>
+        <li>第三项内容</li>
+        <li>第四项内容</li>
+    </ul>
+</body>
+</html>

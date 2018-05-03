@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /*border: 2px solid blue;*/
+            /*border-top: 2px solid blue;*/
+            /*border-bottom:2px solid green;*/
+            /*border-left: 2px solid yellow;*/
+            /*border-right: 5px dashed pink;*/
+
+        }
+        .box{
+            /*上 右 下 左*/
+            /*如果有一个没有写，那么左边的会默认跟右边一样，上面的默认跟下面的一样*/
+            border-width:3px 5px 10px 20px;
+            border-style:solid dashed dotted solid;
+            border-color: blue green yellow pink;
+        }
+        div{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            /*border: 2px solid blue;*/
+        }
+        .box1{
+            /*内边距*/
+            /*设置了边距，标签的原有宽高可能会发生变化*/
+            /*内边距是内容与边框之间的距离*/
+            padding-top: 20px;
+        }
+        .box2{
+            padding-right:40px;
+        }
+
+        .box3{
+            /*外边距是标签与标签之间的距离*/
+            /*外边距有合并现象，如果早垂直方向上，相邻的标签都有外边距，那么谁的外边距比较大，就选择谁*/
+            margin-top:30px;
+        }
+        .content{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+        }
+        .artical1{
+            /*
+                css3中新增了一个box-sizing属性，这个属性可以保证我们给盒子模型新增了padding
+                和border之后，盒子元素的宽度与高度不变，那就必须减去一部分内容的宽度和高度
+                取值：content-box：元素的宽高 = 边框+内边距+内容宽高
+                border-box：width属性
+            */
+            box-sizing: border-box;
+            width: 100px;
+            height: 200px;
+            background-color: deeppink;
+            /*float可以将两个div放在同一行*/
+            float: left;
+            border: 10px solid yellowgreen;
+        }
+        .artical2{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            float: right;
+            border: 10px solid yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <!--div.box$*6-->
+    <div class="box1">我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字</div>
+    <div class="box2">我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字</div>
+    <div class="box3">我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字</div>
+    <div class="box4">我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字</div>
+    <div class="box5">我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字</div>
+    <div class="box6">我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字我是文字</div>
+    <div class="content">
+        <div class="artical1">
+
+        </div>
+        <div class="artical2">
+
+        </div>
+    </div>
+</body>
+</html>

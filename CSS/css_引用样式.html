@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css引用样式</title>
+    <!--css有4种引用样式
+    1、行内样式（内联样式） 在开始标签内添加style样式属性
+    2、内部样式表（嵌入样式）把css样式写在style标签内
+    3、外部样式表（Link样式）把css样式代码写在独立的一个文件中
+    4、导入式
+    -->
+
+    <!--嵌入样式-->
+    <style type="text/css">
+
+        <!--
+        p{color: #ffc050
+        }
+        h2{color: brown}
+        -->
+        /*将样式放在注释里面，是为了防止一些低版本的浏览器不支持css的时候将css代码直接打印在网页*/
+    </style>
+
+    <!--外部样式表-->
+    <link href="2_css_外部样式.css" rel="stylesheet" type="text/css">
+
+    <!--导入式，有两种方法-->
+    <style type="text/css">
+        @import "2_css_外部样式.css";
+    </style>
+</head>
+<body>
+    <!--行内样式-->
+    <h1 style="color: blueviolet">css行内样式</h1>
+
+    <h2>css使用方法</h2>
+    <!--嵌入样式-->
+    <p>嵌入样式</p>
+    <p>外部样式</p>
+    <p>导入样式</p>
+</body>
+</html>

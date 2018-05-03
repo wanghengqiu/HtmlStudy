@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS对象</title>
+
+    <script>
+        var whq = {
+            name : '王恒求',
+            birth : 1990,
+            school : 'USTC',
+            height : 1.90,
+            weight : 100,
+            score : null,
+            'middle-school' : 'zongyang'
+        };
+
+        console.log(whq.birth);
+        console.log(whq['middle']);
+        whq.wife = 'taolili'
+
+        console.log(whq)
+
+        if ('wife' in  whq) {
+            console.log('存在');
+        }
+
+        if (whq.hasOwnProperty('toString')) {
+            console('存在');
+        } else  {
+            console.log('不存在');
+        }
+
+        for (var key in whq) {
+            console.log(key);
+        }
+
+        var arr = ['wang','heng','qiu'];
+        var i;
+        for (i=0;i<arr.length;i++) {
+            console.log(arr[i]);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

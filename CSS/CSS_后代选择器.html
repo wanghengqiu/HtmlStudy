@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后代选择器</title>
+    <style type="text/css">
+        /*找到指定标签的所有后代标签，设置属性*/
+        div p{
+            color: red;
+        }
+        /*后代选择器不仅仅是可以选择某个标签的后代，还可以选择某个id或者某个类的后代*/
+        .para1 p{
+            font-style: italic;
+            font-size:30px;
+        }
+        /*后代选择器还可以类名和id结合一起使用*/
+        .para1 #id1{
+            color: blue;
+        }
+        /*后代可以无限后代*/
+        div ul li p{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <p>我是段落</p>
+    <div>
+        <p>我是段落</p>
+        <p>我是段落</p>
+    </div>
+    <div class="para1">
+        <p id="id1">我是段落</p>
+        <p>我是段落</p>
+        <ul>
+            <li>
+                <ul>
+                    <li>
+                        <p>我是后代的后代的后代</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <p>我是段落</p>
+</body>
+</html>

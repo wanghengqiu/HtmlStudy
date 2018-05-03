@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>map和set</title>
+
+    <script>
+        var aMap = new  Map([['wang',100],['tao',0],['lili',0]]);
+        console.log(aMap.get('wang'));
+        for (var x of aMap) {
+            console.log(x);
+        }
+
+        var s = new Set(['A','B','C']);
+        for (var x of s) {
+            console.log(x);
+        }
+
+        var m = new Map([[1, 'x'], [2, 'y'], [3, 'z']]);
+        m.forEach(function (value, key, map) {
+            console.log(key);
+            console.log(value);
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>

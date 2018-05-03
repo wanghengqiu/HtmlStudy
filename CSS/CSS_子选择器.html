@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        /*找到指定标签中所有特定的直接子元素，然后设置属性*/
+        /*子选择器只会查找儿子，不会查找其他嵌套的选择器*/
+        /*需要用>连接，并且不能有空格*/
+        /*不仅可以是标签的儿子，也可以是类或者id的儿子*/
+        /*可以通过>一直延续下去*/
+        div>p{
+            color: red;
+        }
+        .para1>p{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+<p>我是段落</p>
+
+<div class="para1">
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <ul>
+        <li>
+            <p>我是段落</p>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
