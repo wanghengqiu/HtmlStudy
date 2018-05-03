@@ -29,3 +29,5 @@ console.log(/Box/i.test('This is abox'));
 /*使用exec返回匹配数组*/
 var str2 = 'This is a box,Box is a boxes';
 console.log(patten.exec(str2));
+
+/*使用string的匹配表达式来实现*/
