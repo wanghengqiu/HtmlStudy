@@ -5,6 +5,9 @@
     <title>javascript测试</title>
 
     <script>
+        document.onclick = function () {
+            window.opener.document.write('子窗口让我输入一行字')
+        }
 /*        alert("ceshiceshi");
         var age = 15;
         if (age > 18) {

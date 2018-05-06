@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>6_浮动清除方式三</title>
+    <style>
+        /*
+            1.外墙法
+            在两个盒子中间添加一个额外的块级元素
+            给这个块级元素的clear设置both属性
+            注意点：外墙法它可以让第二个盒子的margin-top有效，但是第一个盒子的margin-bottom
+                   无效
+            一般来说，在这种情况下，我们需要设置margin，就直接设置这个额外块级元素的高度
+        */
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box1{
+            background-color: red;
+        }
+        .box2{
+            background-color: blue;
+        }
+        .box1 p{
+            background-color: yellowgreen;
+        }
+        .box2 p{
+            background-color: deeppink;
+        }
+        p{
+            float: left;
+        }
+
+        .box{
+            clear: both;
+            background-color: powderblue;
+        }
+        .h20{
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <p>我是文字</p>
+        <p>我是文字</p>
+        <p>我是文字</p>
+    </div>
+    <div class="box h20"></div>
+    <div class="box2">
+        <p>我是文字</p>
+        <p>我是文字</p>
+        <p>我是文字</p>
+    </div>
+</body>
+</html>
