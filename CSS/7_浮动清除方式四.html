@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>7_浮动清除方式四</title>
+    <style>
+        /*
+            1.内墙法
+            在第一个盒子的所有子元素最后加一个块级元素，并给这个元素的clear属性设置为both
+            内墙法不会对margin有影响
+            内墙法可以撑起第一个盒子的高度，而外墙法不可以
+        */
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box1{
+            background-color: red;
+        }
+        .box2{
+            background-color: blue;
+        }
+        .box1 p{
+            background-color: yellowgreen;
+        }
+        .box2 p{
+            background-color: deeppink;
+        }
+        p{
+            float: left;
+        }
+
+        .box{
+            clear: both;
+            background-color: powderblue;
+        }
+        .h20{
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <p>我是文字</p>
+        <p>我是文字</p>
+        <p>我是文字</p>
+        <div class="box h20"></div>
+    </div>
+
+    <div class="box2">
+        <p>我是文字</p>
+        <p>我是文字</p>
+        <p>我是文字</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*利用标签的clear属性来设置去除浮动属性*/
+        /*
+            none:默认值，按照浮动元素的排序规则来排序，左浮动去找左浮动，右浮动找右浮动
+            left：当前的标签不要找它前面的左浮动元素
+            right：
+            both：在左右方向上都不去找对应方向上的浮动元素
+            注意点：当设置了clear后，标签的margin属性就会失效
+        */
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box1{
+            background-color: red;
+        }
+        .box2{
+            /*这里就是告诉这个盒子，不要再左方向的浮动上，去*/
+            clear: left;
+            background-color: blue;
+        }
+        .box1 p{
+            background-color: yellowgreen;
+        }
+        .box2 p{
+            background-color: deeppink;
+        }
+        p{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <p>我是文字</p>
+        <p>我是文字</p>
+        <p>我是文字</p>
+    </div>
+    <div class="box2">
+        <p>我是文字</p>
+        <p>我是文字</p>
+        <p>我是文字</p>
+    </div>
+</body>
+</html>
