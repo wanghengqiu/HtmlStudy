@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7fdf25db-a091-4b36-885f-635174aac408" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/CSS/4_浮动的去除方式一.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/5_浮动清除方式二.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/6_浮动清除方式三.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/7_浮动清除方式四.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/10_BOM对象.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/11_opener测试.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/11_operner测试.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/8_继承.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/9_匿名函数与闭包.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/1_JSTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/JS/1_JSTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/7_原型.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/7_原型.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/JS_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/JS/JS_test.html" afterDir="false" />
-    </list>
+    <list default="true" id="7fdf25db-a091-4b36-885f-635174aac408" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -73,7 +59,7 @@
       <file leaf-file-name="10_BOM对象.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JS/10_BOM对象.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
+            <state relative-caret-position="316">
               <caret line="66" column="23" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -315,16 +301,15 @@
       <option name="presentableId" value="Default" />
       <updated>1525329089247</updated>
       <workItem from="1525329090883" duration="18787000" />
-      <workItem from="1525456507114" duration="19005000" />
+      <workItem from="1525456507114" duration="19272000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37792000" />
+    <option name="totallyTimeSpent" value="38059000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="410" y="100" width="815" height="527" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23803681" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -569,7 +554,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JS/10_BOM对象.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
+        <state relative-caret-position="316">
           <caret line="66" column="23" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
