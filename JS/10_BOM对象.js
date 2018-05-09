@@ -65,3 +65,50 @@ if (confirm('确定打开？')) {
 * */
 console.log(screenLeft);
 console.log(screenTop);
+
+/*
+* 窗口页面大小，innerWidth和innerHeigh返回浏览器本身的尺寸；
+* outerWidth和outerHeight返回浏览器窗口本身及边框的尺寸。
+* */
+console.log(window.innerWidth);
+console.log(window.outerWidth);
+
+/*
+* location对象
+* location是BOM对象之一，它提供了当前窗口中加载的文档的有关信息
+* location对象是window对象的属性，也是document对象的属性
+* 一些常用的属性：
+ hash 设置或返回从井号 (#) 开始的 URL（锚）。如果地址里没有“#”，则返回空字符串。
+ host 设置或返回主机名和当前 URL 的端口号。
+ hostname 设置或返回当前 URL 的主机名。
+ href 设置或返回完整的 URL。在浏览器的地址栏上怎么显示它就怎么返回。
+ pathname 设置或返回当前 URL 的路径部分。
+ port 设置或返回当前 URL 的端口号，设置或返回当前 URL 的端口号。
+ protocol 设置或返回当前 URL 的协议，取值为 'http:','https:','file:' 等等。
+ search 设置或返回从问号 (?) 开始的 URL（查询部分）。
+ assign() 加载新的文档。
+ reload() 重新加载当前文档，相当于按浏览器上的“刷新”(IE)或“Reload”(Netscape)键。
+ replace() 用新的文档替换当前文档，相当于按浏览器上的“刷新”(IE)或“Reload”键
+
+
+ protocol 返回地址的协议，取值为 'http:','https:','file:' 等等。
+ hostname 返回地址的主机名，例如，一个“http://www.microsoft.com/china/”的地址，location.hostname == 'www.microsoft.com'。
+ port 返回地址的端口号，一般 http 的端口号是 '80'。
+ host 返回主机名和端口号，如：'www.a.com:8080'。
+
+ pathname 返回路径名，如“http://www.a.com/b/c.html”，location.pathname == 'b/c.html'。
+ hash 返回“#”以及以后的内容，如“http://www.a.com/b/c.html#chapter4”，location.hash == '#chapter4'；如果地址里没有“#”，则返回空字符串。
+ search 返回“?”以及以后的内容，如“http://www.a.com/b/c.asp?selection=3&jumpto=4”，
+    location.search == '?selection=3&jumpto=4'；如果地址里没有“?”，则返回空字符串。
+ href 返回以上全部内容，也就是说，返回整个地址。在浏览器的地址栏上怎么显示它就怎么返回。如果想一个窗口对象打开某地址，可以使用“location.href = '...'”，也可以直接用“location = '...'”来达到此目的。
+* */
+
+/*
+* history对象
+* length:保存着
+* back：后退
+* forward：向前
+* go():使用go()方法可以在用户的历史记录中任意跳转。这个方法接收一个参数，
+*       表示向后或向前跳转的页面数的一个整数值。负数表示向后跳转(类似于后退按钮)，
+*       正数表示向前跳转(类似于前进按钮)
+* */
